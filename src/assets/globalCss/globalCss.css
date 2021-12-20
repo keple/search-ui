@@ -1,0 +1,26 @@
+body {
+    margin : 0px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction : row;
+    align-items: center;
+    width:100%;
+    height:inherit
+}
+.dir_col {
+    flex-direction : column
+}
+.dir_row {
+    flex-direction : row;
+}
+.first {
+    justify-content: flex-start;
+}
+.evenly {
+    justify-content: space-evenly;
+}
+.around {
+    justify-content: space-around;
+}
