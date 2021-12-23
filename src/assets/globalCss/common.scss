@@ -6,3 +6,11 @@ body {
 .no-padding {
   padding:0px!important;
 }
+
+.pointer {
+  cursor : pointer;
+  z-index : 1001;
+}
+.nav-item {
+  list-style:none;
+}
