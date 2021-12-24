@@ -1,6 +1,8 @@
 
 body {
   margin : 0px;
+  min-width:800px;
+  overflow-x:scroll;
 }
 
 .no-padding {
@@ -13,4 +15,8 @@ body {
 }
 .nav-item {
   list-style:none;
+}
+
+.wrapper {
+  padding : 25px;
 }
