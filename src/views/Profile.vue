@@ -1,11 +1,8 @@
 <template>
-  <div id="behind" class="container-fluid m-0 p-0 min-vh-100 bg-light">
+  <div id="behind" class="container-fluid m-0 p-0 min-vh-100 h-100 bg-light">
     <!-- header-->
-    <div class="height20 w-100">
-
-    </div>
     <!--profile icon-->
-    <div class="container-fluid align-content-start p-sm-5 p-md-5 p-lg-5 ms-5">
+    <div  class="container-fluid align-content-start p-sm-5 p-md-5 p-lg-5 ">
       <div class="d-flex justify-content-start  mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5">
         <div id="avatar-big" class="bg-white">
           <img class="w-100 h-100" src="@/assets/logo.png"/>
@@ -48,14 +45,17 @@ export default {
 $translateX : -100%;
   #behind {
     z-index:-1;
+    background:linear-gradient(#C180F0 10%, #ffffff 32%);
   }
   .height20{
-    position:absolute;
+    position:static;
     z-index:1;
-    height:14%;
-    background:linear-gradient(#e66465, #9198e5);
-  }
+    min-height:14%;
 
+  }
+  #header-gradient{
+
+  }
   #avatar-big {
     z-index:999;
     width:300px;

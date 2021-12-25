@@ -1,10 +1,19 @@
 <template>
+  <div>
+    <header-component/>
 
-  <header-component/>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <Menu/>
+        </div>
+        <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 m-0 p-0">
+          <router-view/>
+        </div>
 
-
-    <router-view/>
-
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
@@ -33,7 +42,8 @@
 
 
 import HeaderComponent from "@/components/HeaderComponent";
+import Menu from "@/components/Menu";
 export default {
-  components: {HeaderComponent}
+  components: {Menu, HeaderComponent}
 }
 </script>
