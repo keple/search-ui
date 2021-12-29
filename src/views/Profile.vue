@@ -14,23 +14,38 @@
         </div>
       </div>
     </div>
-    <div class="wrapper align-content-start">
-      <form>
-        <div class="mb-3">
+    <div class="wrapper">
+        <div class="mb-3 text-start">
+          <label for="profile_img" class="form-label">프로필 이미지</label>
+          <div class="d-flex">
+            <div class="w-50 h-25">
+              <div class="d-flex justify-content-around">
+                <div id="view_port1" class="bg-light">
+
+                </div>
+                <div id="view_port2" class="bg-light">
+
+                </div>
+                <div id="view_port3" class="bg-light">
+
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <input id="profile_img" type="file" class="form-control" aria-describedby="image_help">
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 text-start">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 text-start">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
     </div>
   </div>
 </template>
@@ -74,5 +89,17 @@ $translateX : -100%;
     height:66px;
     border-radius: 50%;
     transform : translateX($translateX);
+  }
+  #view_port1 {
+    width:120px;
+    height:120px;
+  }
+  #view_port2 {
+    width:180px;
+    height:180px;
+  }
+  #view_port3{
+    width:240px;
+    height:240px;
   }
 </style>
