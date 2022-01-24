@@ -19,13 +19,7 @@
           <label for="profile_img" class="form-label">프로필 이미지</label>
           <div class="d-flex">
             <div class="w-50 h-25">
-              <div class="d-flex justify-content-around">
-                <div id="view_port1" class="bg-light">
-
-                </div>
-                <div id="view_port2" class="bg-light">
-
-                </div>
+              <div class="d-flex justify-content-start">
                 <div id="view_port3" class="bg-light">
 
                 </div>
@@ -45,14 +39,26 @@
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button v-on:click="webSocketsubmit()" class="btn btn-primary">Submit</button>
     </div>
   </div>
 </template>
 
 <script>
+import handle from "@/websocket/WebsocketHandler";
 export default {
-  name: "Profile"
+  name: "Profile",
+  data : ()=>{
+    return {}
+  },
+  methods: {
+    webSocketsubmit : () => {
+      handle.getEmitter().emitEvent('test',{test:1})
+    },
+  },
+  mounted(){
+
+  }
 }
 </script>
 

@@ -11,9 +11,9 @@
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body no-padding">
               <ul class="list-group">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
+                <li class="list-group-item pointer"><a href="/info">inf</a></li>
+                <li class="list-group-item pointer"><a href="/summary">summary</a></li>
+                <li class="list-group-item pointer">third</li>
               </ul>
             </div>
           </div>
@@ -25,7 +25,13 @@
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            <div class="accordion-body no-padding">
+              <ul class="list-group">
+                <li class="list-group-item pointer">first</li>
+                <li class="list-group-item pointer">second</li>
+                <li class="list-group-item pointer">third</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="list-group-item text-start">
