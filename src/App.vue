@@ -43,7 +43,29 @@
 
 import HeaderComponent from "@/components/HeaderComponent";
 import Menu from "@/components/Menu";
+import ApiList from '@/api/ApiRequest';
 export default {
-  components: {Menu, HeaderComponent}
+
+  components: {
+    Menu, HeaderComponent
+  },
+  data : () => {
+    return  {};
+  },
+  methods : {
+    initUser : () => {
+       ApiList.global.getUserInfo().then(function(res) {
+         console.log("returned obj" , res);
+       })
+      .catch(function(err){
+        console.error(err);
+      })
+    }
+  },
+  mounted : function(){
+    this.initUser();
+  },
+  //life cycle
+
 }
 </script>
