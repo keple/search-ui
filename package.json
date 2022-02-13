@@ -1,5 +1,5 @@
 {
-  "name": "vue-blog",
+  "name": "sample-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,7 +19,8 @@
     "sass-loader": "^10.2.0",
     "socket.io-client": "^4.4.1",
     "vue": "^3.0.11",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "vue-toast-notification": "^3.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.13",

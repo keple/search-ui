@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div style="height:100%">
     <header-component/>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+    <div class="container-fluid fill-height">
+      <div class="d-flex h-100 align-items-stretch">
+        <div class="w-25 h-100">
             <Menu/>
         </div>
-        <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 m-0 p-0">
+        <div class="w-75">
           <router-view/>
         </div>
 

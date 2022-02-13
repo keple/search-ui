@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper">
-    <div class="bg-light wrapper">
+  <div class="wrapper-xs h-100">
+    <div class=" wrapper h-100">
       <div class="accordion list-group no-border">
         <div class="accordion-item list-group-item no-padding">
           <h2 class="accordion-header">
